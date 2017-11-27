@@ -1,0 +1,24 @@
+
+<div ng-controller="form">
+        <div class=container>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"></div>
+                <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                        <div class=" jumbotron">
+                            <h3>enter city to present temperature:</h3>
+                            <input class="input-lg" ng-model="city">
+                            <button class="btn btn-lg" ng-click="showWeather()">send</button>
+                        </div>
+                        <div></div>
+                        <div class=" jumbotron">
+                            <h3>{{message}}</h3>
+                            <h1>{{forcast}}<span id="celcius"></span></h1>
+                        </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"></div>
+                
+            </div>
+        </div>
+       
+        
+    </div>

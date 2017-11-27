@@ -3,24 +3,24 @@
     <head> 
             <script src="../node_modules/angular/angular.min.js"></script>
             <script src="../node_modules/angular-route/angular-route.min.js"></script>
-            <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+            <script src="../node_modules/jquery/dist/jquery.min.js"
+            <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="../node_modules/weather-icons/css/weather-icons.css">
             <script src="app.js"></script>
+            <script src="controllers.js"></script>
     </head>
 
 <body>
-        <nav>
-                <a href="#!order" >newyork</a>
-                <a href="#!paris ">paris</a>
-                <a href="#!london ">london</a>
+        <nav class ="btn-group btn-group-lg">
+                <a class ="btn" href="#!city/new york" >new york</a>
+                <a class ="btn" href="#!city/paris ">paris</a>
+                <a class ="btn" href="#!city/london ">london</a>
+                <a class ="btn" href="#!">home</a>
+              
                 
-            </nav>
-    <div ng-controller="form">
-        <input ng-model="city">
-        <button ng-click="showWeather()">send</button>
-         {{forcast}}
-        <hr>
-        
-    </div>
+        </nav>
+        <div ng-view></div>
 
 
 
